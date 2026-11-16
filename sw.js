@@ -1,7 +1,7 @@
-// 選戰風雲 service worker 88d208a1db
-const CACHE = "xzfy-88d208a1db";
+// 選戰風雲 service worker eef85182b1
+const CACHE = "xzfy-eef85182b1";
 const PREFIX = "xzfy-";
-const FILES = ["./","./assets/clips-Dq2VwamF.bin","./assets/council-DVFlmRjo.webp","./assets/index-CGXX5PgG.js","./assets/nightmarket-BHEmTZR_.webp","./assets/park-ByCbBgEr.webp","./assets/studio-CwUp09rL.webp","./icons/icon-180.png","./icons/icon-192.png","./icons/icon-512.png","./index.html","./manifest.webmanifest"];
+const FILES = ["./","./assets/clips-Dq2VwamF.bin","./assets/council-DVFlmRjo.webp","./assets/index-9J_pNYTt.js","./assets/nightmarket-BHEmTZR_.webp","./assets/park-ByCbBgEr.webp","./assets/studio-CwUp09rL.webp","./endings/exposer.webp","./endings/gangpao.webp","./endings/host.webp","./endings/meme.webp","./endings/prince.webp","./endings/queen.webp","./icons/icon-180.png","./icons/icon-192.png","./icons/icon-512.png","./index.html","./manifest.webmanifest","./portraits/exposer.webp","./portraits/gangpao.webp","./portraits/host.webp","./portraits/meme.webp","./portraits/prince.webp","./portraits/queen.webp"];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)));
